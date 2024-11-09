@@ -12,6 +12,18 @@
 @import url(../css/utils/variables.css);
 @import url(../css/utils/common.css);
 
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 /* video */
 
 .video-section {
@@ -189,7 +201,7 @@
 
 .btn {
   display: block;
-  padding: 8px 0;
+  padding: 8px 0 3px;
 
   color: #fff;
   text-align: center;
@@ -200,12 +212,13 @@
   line-height: 105%; /* 34.65px */
   letter-spacing: -0.33px;
 
-  border: inherit;
   border-radius: 107px;
   background: #c37c84;
 
   max-width: 276px;
   margin: 0 auto;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 .attention {
