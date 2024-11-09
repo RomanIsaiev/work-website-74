@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Мікро-вебінар</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,72 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
     <main>
-      <section></section>
+      <section class="video-section">
+        <div class="container">
+          <div class="video-wrapper">
+            <div class="watch-here-box">
+              <img
+                class="arrow"
+                src="./src/img/watch-arrow.svg"
+                alt="arrow"
+                width="12"
+                height="8"
+              />
+              <p class="watch-text">Дивитись тут</p>
+              <img
+                class="arrow"
+                src="./src/img/watch-arrow.svg"
+                alt="arrow"
+                width="12"
+                height="8"
+              />
+            </div>
+            <div class="video-box">
+              <iframe
+                class="video"
+                src="https://www.youtube.com/embed/3s8LxCoODuU?si=DNnU32O5ULwYoypp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="diagnostics-section">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">запишись</h2>
+            <p class="subtitle">НА БЕЗКОШТОВНУ ДІАГНОСТИКУ</p>
+          </div>
+          <div class="get-wrapper">
+            <p class="skin-title">СТАНУ ТВОЄЇ ШКІРИ,</p>
+            <p class="skin-text">ЇЇ ПРОБЛЕМ І ОСОБЛИВОСТЕЙ</p>
+            <p class="get-text">
+              <span>та отримай покрокові індивідуальні</span> <br />
+              рекомендації та інструменти, за допомогою яких ти зможеш відновити
+              свою красу та поліпшити життя
+            </p>
+            <a
+              class="btn"
+              href="https://docs.google.com/forms/d/1N6KWJR4z5rhyfQUoALz9aQtKFlECBII1vuKN0SviCEo/edit"
+              target="_blank"
+              rel="nofollow"
+              >ЗАПИСАТИСЬ</a
+            >
+          </div>
+          <div class="attention">
+            <p class="attention-title">важливо</p>
+            <p class="attention-text">
+              Для діагностики ви маєте бути на зв'язку в telegram, viber aбo
+              whatsapp
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
   </body>
 </html>
